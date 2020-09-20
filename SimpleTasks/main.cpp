@@ -45,10 +45,21 @@ double GetResTask3(int a)
 	return sum;
 }
 
+double GetResTask4(int n)
+{
+	double result = 1.0;
+	for(int i = 1; i <= n; i++)
+	{
+		result *= (1 + 1 / ((double) i * i));
+	}
+	return result;
+}
+
 int main()
 {
 	cout << GetResTask1() << endl;
 	cout << GetResTask2(65) << endl;
 	cout << GetResTask3(2) << endl;
+	cout << GetResTask4(10) << endl;
 	return 0;
 }
