@@ -33,9 +33,22 @@ double GetResTask2(int x)
 	return resUp / resDown;
 }
 
+double GetResTask3(int a)
+{
+	int sum = 0.0;
+	int ai = a;
+	for(int i = 1; i <= 10; i++)
+	{
+		sum += ai;
+		ai *= a;
+	}
+	return sum;
+}
+
 int main()
 {
 	cout << GetResTask1() << endl;
 	cout << GetResTask2(65) << endl;
+	cout << GetResTask3(2) << endl;
 	return 0;
 }
